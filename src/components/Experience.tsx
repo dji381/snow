@@ -1,10 +1,12 @@
-import { OrbitControls, Sphere } from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
+import SnowParticle from "./SnowParticle";
 
 const Experience = () => {
   return (
     <>
+      <Environment preset="night"/>
       <OrbitControls />
-      <Sphere position={[0,0,0]}/>
+      <SnowParticle/>
     </>
   );
 };
